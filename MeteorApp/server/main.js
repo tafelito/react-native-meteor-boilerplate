@@ -1,8 +1,9 @@
 import { Meteor } from 'meteor/meteor';
-import publications from './publications';
-import seeds from './seeds';
+import FacebookOAuthInit from './imports/oauth-facebook';
+
+import '/imports/api/items';
 
 Meteor.startup(() => {
-  publications();
-  seeds();
+  // code to run on server at startup
+  FacebookOAuthInit();
 });
