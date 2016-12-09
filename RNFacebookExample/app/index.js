@@ -79,6 +79,7 @@ class App extends Component {
           key="Tabbar"
           tabs
           hideNavBar
+          type="replace"
           default="Chats"
           tabBarStyle={styles.tabBarStyle}
         >
